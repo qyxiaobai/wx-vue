@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav-top></nav-top>
-        <div>微信</div>
+        <div>{{name}}</div>
         <nav-footer></nav-footer>
     </div>
 </template>
@@ -16,11 +16,8 @@ export default {
     },
     data() {
         return {
-            
+            name: '微信主页面'
         }
-    },
-    methods: {
-        
     },
 }
 </script>

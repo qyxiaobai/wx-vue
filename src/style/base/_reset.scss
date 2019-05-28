@@ -1,0 +1,101 @@
+//浏览器初始化文件
+//基础样式文件
+/**
+ * @author: 金波
+ * @date: 2018/6/27
+ * @version: V1.0
+ * @Description: 重置浏览器样式
+*/
+
+$main-font: "'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','微软雅黑',Arial,sans-serif ";
+//浏览器重置样式
+html, body, div, span, nav, header, iframe, h1, h2, h3, h4, h5, h6, p, section, footer, a, form, address, big, cite, code, del, dfn, em, img, ins, fieldset, q, s, samp, small, strike, strong, sub, sup, label, var, b, u, i, input, dl, dt, dd, ol, ul, li, figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family:$main-font;
+}
+html,body {
+  font{
+    size: 16px;
+  }
+  font-family:$main-font;
+}
+
+form,
+fieldset {
+  border: 0 none;
+}
+
+ol li,ul li {
+  list-style: none;
+}
+
+select {
+  appearance: none;
+}
+
+img {
+  border: 0 none;
+  max-width: 100%;
+}
+
+input,
+select {
+  outline: none;
+  font-family: $main-font;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+  line-height: 38px;
+}
+button {
+  outline: none;
+  border: 0;
+  font-family: $main-font;
+  cursor: pointer;
+}
+
+:focus {
+  outline: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  outline: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+a {
+  color: #535353;
+  text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: '.';
+}
+.clearfix {
+  zoom: 1;
+}
+

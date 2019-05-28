@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span>微信</span>
+        <span>{{title}}</span>
         <div>
             <span @click="searchClick">搜索</span>
             <span @click="createClick">添加</span>
@@ -11,7 +11,7 @@
 export default {
     data() {
         return {
-
+            title: '微信'
         }
     },
     methods: {

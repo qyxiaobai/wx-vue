@@ -1,28 +1,12 @@
 <template>
     <div>
         <ul>
-            <li>
+            <li v-for="(name, nameIndex) in listName"
+                :key="nameIndex"
+                @click="tabClick(name)">
                 <a href="javascript:void(0)">
                     <i></i>
-                    <span>微信</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i></i>
-                    <span>通讯录</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i></i>
-                    <span>发现</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i></i>
-                    <span>我</span>
+                    <span>{{name}}</span>
                 </a>
             </li>
         </ul>
@@ -33,11 +17,26 @@
 export default {
     data() {
         return {
-
+            listName:[
+                {
+                    name:'微信'
+                },
+                {
+                    name:'通讯录'
+                },
+                {
+                    name:'发现'
+                },
+                {
+                    name:'我'
+                }
+            ]
         }
     },
     methods: {
-        
+        tabClick(val) {
+            console.log(val)
+        }
     },
 }
 </script>

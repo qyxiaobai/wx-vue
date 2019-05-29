@@ -1,12 +1,12 @@
 <template>
     <div>
         <ul>
-            <li v-for="(name, nameIndex) in listName"
+            <li v-for="(names, nameIndex) in listName"
                 :key="nameIndex"
-                @click="tabClick(name)">
+                @click="tabClick(names.name)">
                 <a href="javascript:void(0)">
                     <i></i>
-                    <span>{{name}}</span>
+                    <span>{{names.name}}</span>
                 </a>
             </li>
         </ul>

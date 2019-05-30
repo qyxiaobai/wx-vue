@@ -1,17 +1,28 @@
 <template>
-    <div>
-        <span>{{title}}</span>
+    <div class="wx-header">
+        <span>{{name}}</span>
         <div>
-            <span @click="searchClick">搜索</span>
-            <span @click="createClick">添加</span>
+            <span class="el-icon-search" @click="searchClick"></span>
+            <span class="el-icon-circle-plus-outline" @click="createClick"></span>
         </div>
     </div>
 </template>
 <script>
 export default {
+    props: {
+        title: {
+            type: String,
+            default: '微信'
+        }
+    },
     data() {
         return {
-            title: '微信'
+            name: this.title
+        }
+    },
+    watch: {
+        title: function(val){
+            this.name = val
         }
     },
     methods: {

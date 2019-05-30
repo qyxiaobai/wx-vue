@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Wx from '@/page/Wx'
+import Index from '@/page/Index'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Wx',
-      component: Wx
+      name: 'Index',
+      component: Index
     }
   ]
 })
